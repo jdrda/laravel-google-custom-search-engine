@@ -6,8 +6,10 @@ return [
      * If you create your engine at https://cse.google.com/cse/ you will find the ID after you click at Settings.
      * Just check the URL you have like https://cse.google.com/cse/setup/basic?cx=search_engine_id
      * and the string after cx= is your search engine ID
+     *
+     * !! Attention !! If you change style of your Custom search engine, the ID can be changed
      */
-    'engineId' => '',
+    'engineId' => '009135221033437726143:k204yzkg1k8',
 
     /**
      * For generation API key you have to go to https://console.developers.google.com, than
@@ -20,7 +22,7 @@ return [
      * 7. click on the 'Create credentials' and choose 'API key'
      * 8. your API key is shown, so copy and paste it here
      *
-     * !! It can take some time to API key will be authorized, wait 10 mins before starting to use it
+     * !! Attention !! It can take some time to API key will be authorized, wait 10 mins before starting to use it
      */
-    'apiKey' => ''
+    'apiKey' => 'AIzaSyABzXEPu8_ucfJqAvzrYgyE69hmS7Wssts'
 ];

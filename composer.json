@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-0": {
-            "JDrda\\LaravelGoogleCustomSearchEngine": "src/"
+            "JanDrda\\LaravelGoogleCustomSearchEngine": "src/"
         }
     },
     "config": {

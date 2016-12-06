@@ -19,14 +19,14 @@ composer require jdrda/laravel-google-custom-search-engine
 ```php
 'providers' => [
     '...',
-    'JDrda\LaravelGoogleCustomeSearchEngine\LaravelGoogleCustomeSearchEngineProvider'
+    'JanDrda\LaravelGoogleCustomeSearchEngine\LaravelGoogleCustomeSearchEngineProvider'
 ];
 ```
 3. Add alias for Facade to config/app.php
 ```php
 'aliases' => [
 	...
-	'GoogleCseSearch' => 'JDrda\LaravelGoogleCustomeSearchEngine\Facades\LaravelGoogleCustomeSearchEngineProvider',
+	'GoogleCseSearch' => 'JanDrda\LaravelGoogleCustomeSearchEngine\Facades\LaravelGoogleCustomeSearchEngineProvider',
 	...
 ]
 ```
