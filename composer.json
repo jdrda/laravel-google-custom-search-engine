@@ -1,0 +1,42 @@
+{
+    "name": "jan-drda/laravel-google-custom-search-engine",
+    "description": "Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.",
+    "homepage": "https://github.com/jdrda/laravel-google-custom-search-engine",
+    "keywords":
+        [
+            "search",
+            "google",
+            "custom",
+            "engine",
+            "free",
+            "paid",
+            "laravel"
+        ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Drda",
+            "email": "jdrda@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "jdrda@outlook.com",
+        "issues": "https://github.com/jdrda/laravel-google-custom-searchengine/issues",
+        "wiki": "https://github.com/jdrda/laravel-google-custom-searchengine/wiki",
+        "source": "https://github.com/jdrda/laravel-google-custom-searchengine/archive/master.zip"
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=5.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "JanDrda\\LaravelGoogleCustomSearchEngine": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
