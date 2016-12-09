@@ -5,7 +5,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4438fdee3b8b45b2b47ca38b29774fdc)](https://www.codacy.com/app/yan_2/laravel-google-custom-search-engine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jdrda/laravel-google-custom-search-engine&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/jdrda/laravel-google-custom-search-engine/badges/gpa.svg)](https://codeclimate.com/github/jdrda/laravel-google-custom-search-engine)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jdrda/laravel-google-custom-search-engine.svg)](https://gemnasium.com/github.com/jdrda/laravel-google-custom-search-engine)
-[![Ko-fi](https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f = 142x ](https://ko-fi.com/A067ES5)
+[![Ko-fi](https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f = 142x)](https://ko-fi.com/A067ES5)
 ## Laravel Google Custom Search Engine
 Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.
 
@@ -16,7 +16,7 @@ some research and develop package similar way, but independent to Google CSE ver
  
 #### Coffee for developes
 If you like this project, you can buy me a coffee to help me get fresh. :)
-[![Ko-fi](https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f = 142x](https://ko-fi.com/A067ES5)
+[![Ko-fi](https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f = 142x)](https://ko-fi.com/A067ES5)
 
 ## Installation
 1/ Install with Composer
