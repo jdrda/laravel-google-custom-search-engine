@@ -3,9 +3,9 @@
 namespace JanDrda\LaravelGoogleCustomSearchEngine;
 
 use Exception;
-use JDrda\LaravelGoogleCustomSearchEngine\Interfaces\LaravelGoogleCustomSearchEngineInterface;
+use JanDrda\LaravelGoogleCustomeSearchEngine\Interfaces\LaravelGoogleCustomSearchEngineInterface;
 
-class LaravelGoogleCustomSearchEngine implements LaravelGoogleCustomSearchEngineInterface
+class LaravelGoogleCustomSearchEngine
 {
 
     /**
@@ -36,10 +36,10 @@ class LaravelGoogleCustomSearchEngine implements LaravelGoogleCustomSearchEngine
      * @param $engineId
      * @param $apiKey
      */
-    public function __construct($engineId, $apiKey)
+    public function __construct()
     {
-        $this->engineId = $engineId;
-        $this->apiKey = $apiKey;
+        $this->engineId = config('laravelGoogleCustomSearchEngine.engineId');
+        $this->apiKey = config('laravelGoogleCustomSearchEngine.apiKey');
     }
 
     /**
@@ -63,14 +63,31 @@ class LaravelGoogleCustomSearchEngine implements LaravelGoogleCustomSearchEngine
     /**
      * Get search results
      *
+     * Gets results from CSE only as array of objects where the most important variables are
+     * [title] - page title
+     * [htmlTitle] - page title with HTML tags
+     * [link] - page URL
+     * [displayLink] - displayed part of page URL
+     * [snippet] - short text from page with the searched phrase
+     * [htmlSnippet] - short text from page with the searched phrase with HTML tags
+     * complete list of parameters with description is located at
+     * https://developers.google.com/custom-search/json-api/v1/reference/cse/list#response
+     *
+     * Input parameters are available here
+     * https://developers.google.com/custom-search/json-api/v1/reference/cse/list#parameters
+     *
      * @param $phrase
      * @return array
      * @throws Exception
+     * @link https://developers.google.com/custom-search/json-api/v1/reference/cse/list#response
+     * @link https://developers.google.com/custom-search/json-api/v1/reference/cse/list#parameters
      */
-    public function getResults($phrase)
+    public function getResults($phrase, $parameters = array())
     {
-        $searchResults = array();
 
+        /**
+         * Check required parameters
+         */
         if ($phrase == '') {
             return $searchResults;
         }
@@ -83,13 +100,31 @@ class LaravelGoogleCustomSearchEngine implements LaravelGoogleCustomSearchEngine
             throw new \Exception('You must specify a apiKey');
         }
 
-        // create a new cURL resource
+        /**
+         * Create search aray
+         */
+        $searchArray = http_build_query(array_merge(
+            ['key' => $this->apiKey],
+            ['q' => $phrase],
+            $parameters
+        ));
+
+        /**
+         * Add unencoded search engine id
+         */
+        $searchArray = '?cx=' . $this->engineId . '&' . $searchArray;
+
+        /**
+         * Prepare CUrl and get result
+         */
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_URL, "http://www.example.com/");
+        curl_setopt($ch, CURLOPT_URL, "https://www.googleapis.com/customsearch/v1" . $searchArray);
         curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+        curl_setopt($ch, CURLOPT_POST, 0);
 
         $output = curl_exec($ch);
 
@@ -97,14 +132,68 @@ class LaravelGoogleCustomSearchEngine implements LaravelGoogleCustomSearchEngine
 
         curl_close($ch);
 
+        /**
+         * Check HTTP code of the result
+         */
         if ($output === false || $info['http_code'] != 200) {
 
             throw new \Exception("No data returned, code [". $info['http_code']. "] - " . curl_error($ch));
-
         }
 
+        /**
+         * Convert JSON format to object and save
+         */
+        $this->originalResponse = json_decode($output);
 
-        return $searchResults;
+        /**
+         * If there are some results, return them, otherwise return blank array
+         */
+        if(isset($this->originalResponse->items)){
+            return $this->originalResponse->items;
+        }
+        else{
+            return array();
+        }
+
+    }
+
+    /**
+     * Get full original response
+     *
+     * Gets full originated response converted from JSON to StdClass
+     * Full list of parameters is located at
+     * complete list of parameters with description is located at
+     * https://developers.google.com/custom-search/json-api/v1/reference/cse/list#response
+     *
+     * @return \stdClass
+     * @url https://developers.google.com/custom-search/json-api/v1/reference/cse/list#response
+     */
+    public function getRawResult(){
+        return $this->originalResponse;
+    }
+
+    /**
+     * Get search information
+     *
+     * Gets basic information about search
+     * [searchTime] - time costs of the search
+     * [formattedSearchTime] - time costs of the search formatted according to locale style
+     * [totalResults] - number of results
+     * [formattedTotalResults] - number of results formatted according to locale style
+     *
+     * @return \stdClass
+     */
+    public function getSearchInformation(){
+        return $this->originalResponse->searchInformation;
+    }
+
+    /**
+     * Get the total number of pages where the search phrase is located
+     *
+     * @return integer
+     */
+    public function getTotalNumberOfpages(){
+        return $this->originalResponse->searchInformation->totalResults;
     }
 
 }
