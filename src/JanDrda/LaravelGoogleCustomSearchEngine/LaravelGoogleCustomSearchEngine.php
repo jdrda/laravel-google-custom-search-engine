@@ -24,7 +24,7 @@ class LaravelGoogleCustomSearchEngine
     /**
      * Original response converted to array
      *
-     * @var array
+     * @var \stdClass
      */
     protected $originalResponse;
 
@@ -88,7 +88,7 @@ class LaravelGoogleCustomSearchEngine
          * Check required parameters
          */
         if ($phrase == '') {
-            return $searchResults;
+            return array();
         }
 
         if ($this->engineId == '') {
