@@ -110,7 +110,7 @@ If you have more engines / more api keys, you can override the config variables 
 $fulltext = new LaravelGoogleCustomSearchEngine(); // initialize
 
 $fulltext->setEngineId('someEngineId'); // sets the engine ID
-$fulltext->setApiKey($apiKey); // sets the API key
+$fulltext->setApiKey('someApiId'); // sets the API key
 
 $results =  $fulltext->getResults('some phrase'); // get first 10 results for query 'some phrase'
 ```
@@ -119,7 +119,7 @@ $results =  $fulltext->getResults('some phrase'); // get first 10 results for qu
 Essetial documentation will be at [Github Wiki](https://github.com/jdrda/laravelgooglecsesearch/wiki)
 Now is under the development.
 
-### License
+## License
 This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT) 
 
 ## About
