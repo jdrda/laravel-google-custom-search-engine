@@ -3,7 +3,6 @@
 namespace JanDrda\LaravelGoogleCustomSearchEngine;
 
 use Exception;
-use JanDrda\LaravelGoogleCustomeSearchEngine\Interfaces\LaravelGoogleCustomSearchEngineInterface;
 
 class LaravelGoogleCustomSearchEngine
 {
