@@ -13,7 +13,7 @@ As Swiftype closed free plans, I started to find some alternative without too mu
 The best I found was [Spatie's Google Search package](https://github.com/spatie/googlesearch) for Google CSE paid version, so I made
 some research and develop package similar way, but independent to Google CSE version.
  
-#### Coffee for developes
+#### Coffee for developers
 If you like this project, you can buy me a coffee to help me get fresh. :)
 https://ko-fi.com/A067ES5
 
