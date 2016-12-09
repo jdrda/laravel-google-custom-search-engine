@@ -1,4 +1,4 @@
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70/big.png)](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70/mini.png)](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/546/badge)](https://bestpractices.coreinfrastructure.org/projects/546)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jdrda/olapus/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jdrda/olapus/build-status/master)
