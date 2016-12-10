@@ -1,3 +1,4 @@
+[![GitHub version](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine.svg)](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70/mini.png)](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/546/badge)](https://bestpractices.coreinfrastructure.org/projects/546)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/?branch=master)
@@ -5,7 +6,12 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4438fdee3b8b45b2b47ca38b29774fdc)](https://www.codacy.com/app/yan_2/laravel-google-custom-search-engine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jdrda/laravel-google-custom-search-engine&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/jdrda/laravel-google-custom-search-engine/badges/gpa.svg)](https://codeclimate.com/github/jdrda/laravel-google-custom-search-engine)
 [![Dependency Status](https://gemnasium.com/badges/github.com/jdrda/laravel-google-custom-search-engine.svg)](https://gemnasium.com/github.com/jdrda/laravel-google-custom-search-engine)
-## Laravel Google Custom Search Engine
+![](https://reposs.herokuapp.com/?path=jdrda/laravel-google-custom-search-engine)
+[![GitHub issues](https://img.shields.io/github/issues/jdrda/laravel-google-custom-search-engine.svg)](https://github.com/jdrda/laravel-google-custom-search-engine/issues)
+[![GitHub forks](https://img.shields.io/github/forks/jdrda/laravel-google-custom-search-engine.svg)](https://github.com/jdrda/laravel-google-custom-search-engine/network)
+[![GitHub stars](https://img.shields.io/github/stars/jdrda/laravel-google-custom-search-engine.svg)](https://github.com/jdrda/laravel-google-custom-search-engine/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jdrda/laravel-google-custom-search-engine/master/license.md)
+
 Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.
 
 #### Brief history
