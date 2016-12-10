@@ -1,5 +1,5 @@
-[![GitHub version](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine.svg)](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70/mini.png)](https://insight.sensiolabs.com/projects/971d87c0-18b1-4c32-9cf1-4763345b8e70)
+[![GitHub version](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine.svg)](https://badge.fury.io/gh/jdrda%2Flaravel-google-custom-search-engine)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/546/badge)](https://bestpractices.coreinfrastructure.org/projects/546)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/badges/build.png?b=master)](https://scrutinizer-ci.com/g/jdrda/laravel-google-custom-search-engine/build-status/master)
@@ -11,6 +11,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/jdrda/laravel-google-custom-search-engine.svg)](https://github.com/jdrda/laravel-google-custom-search-engine/network)
 [![GitHub stars](https://img.shields.io/github/stars/jdrda/laravel-google-custom-search-engine.svg)](https://github.com/jdrda/laravel-google-custom-search-engine/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jdrda/laravel-google-custom-search-engine/master/license.md)
+[![Packagist](https://img.shields.io/packagist/v/jan-drda/laravel-google-custom-search-engine.svg)]()
+[![Packagist](https://img.shields.io/packagist/dt/jan-drda/laravel-google-custom-search-engine.svg)]()
 
 Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.
 
