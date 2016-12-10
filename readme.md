@@ -13,7 +13,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/jdrda/laravel-google-custom-search-engine/master/license.md)
 [![Packagist](https://img.shields.io/packagist/v/jan-drda/laravel-google-custom-search-engine.svg)]()
 [![Packagist](https://img.shields.io/packagist/dt/jan-drda/laravel-google-custom-search-engine.svg)]()
-
+#Laravel Google Custom Search Engine
 Laravel package to get Google Custom Search results from Google Custom Search Engine API for both free and paid version.
 
 #### Brief history
