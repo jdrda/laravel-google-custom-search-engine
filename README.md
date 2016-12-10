@@ -51,7 +51,7 @@ composer require jdrda/laravel-google-custom-search-engine
 
 4/ Publish the config file
 ```bash
-php artisan vendor:publish --provider="JDrda\LaravelGoogleCustomSearchEngine\LaravelGoogleCustomSearchEngineProvider"
+php artisan vendor:publish --provider="JanDrda\LaravelGoogleCustomSearchEngine\LaravelGoogleCustomSearchEngineProvider"
 ```
 
 ## Configuration
