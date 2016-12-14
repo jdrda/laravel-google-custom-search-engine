@@ -29,7 +29,7 @@ https://ko-fi.com/A067ES5
 1/ Install with Composer
 
 ```bash
-composer require jdrda/laravel-google-custom-search-engine
+composer require jan-drda/laravel-google-custom-search-engine
 ```
 
 2/ Add the service provider to config/app.php
@@ -74,7 +74,7 @@ php artisan vendor:publish --provider="JanDrda\LaravelGoogleCustomSearchEngine\L
 9. your API key is shown, so copy and paste it here
 
 ### Save the configuration values
-Save search engine ID and api ID in your config/laravelGoogleCustomSearchEngine
+Save search engine ID and api ID in your config/laravelGoogleCustomSearchEngine.php
 
 ## Usage
 
