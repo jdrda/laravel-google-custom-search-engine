@@ -85,6 +85,24 @@ $fulltext = new LaravelGoogleCustomSearchEngine(); // initialize
 $results = $fulltext->getResults('some phrase'); // get first 10 results for query 'some phrase' 
 ```
 
+#### Do not forget to map namespace with, so sample controller will look like this (in min. way)
+It is only example controller name, you can use whatever you want, this is notice mainly for novices in Laravel
+```php
+namespace App\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use JanDrda\LaravelGoogleCustomSearchEngine\LaravelGoogleCustomSearchEngine;
+
+class GoogleSearchController extends Controller
+{
+
+  public function index(){
+    $fulltext = new LaravelGoogleCustomSearchEngine(); // initialize
+    $results = $fulltext->getResults('some phrase'); // get first 10 results for query 'some phrase' 
+  }
+}
+```
+
 You can also get information about the search like total records and search time
 ```php
 $fulltext = new LaravelGoogleCustomSearchEngine(); // initialize
