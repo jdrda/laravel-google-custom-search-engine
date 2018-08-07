@@ -128,9 +128,7 @@ class LaravelGoogleCustomSearchEngine
         $output = curl_exec($ch);
 
         $info = curl_getinfo($ch);
-
-        curl_close($ch);
-
+        
         /**
          * Check HTTP code of the result
          */
@@ -138,6 +136,8 @@ class LaravelGoogleCustomSearchEngine
 
             throw new \Exception("No data returned, code [". $info['http_code']. "] - " . curl_error($ch));
         }
+
+        curl_close($ch);
 
         /**
          * Convert JSON format to object and save
